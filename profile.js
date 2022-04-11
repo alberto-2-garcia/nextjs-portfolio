@@ -20,3 +20,11 @@ export const skills = [
     percentage: 40
   },
 ];
+
+export const experience = [
+  {
+    title: 'Software Engineer Intern - IndexZero',
+    date: 'Jan 2021 - Aug 2021',
+    desc: 'Ruby on Rails fullstack developer'
+  }
+]

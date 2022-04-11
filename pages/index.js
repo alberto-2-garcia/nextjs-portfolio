@@ -5,7 +5,7 @@ import { Col, Row, Card, Button, ProgressBar } from 'react-bootstrap'
 import Layout from '../components/Layout'
 
 const ppSize = 350;
-import { skills } from './../profile';
+import { skills, experience } from './../profile';
 
 export default function Home() {
   
@@ -51,11 +51,9 @@ export default function Home() {
                 <h1>Skills</h1>
                 <div>
                   {skills.map(({ skill, percentage }) => (
-                    <div key={skill}>
-                      <p>{skill}</p>
-                      <p>
-                        <ProgressBar now={percentage} />
-                      </p>
+                    <div key={skill} className='mb-4'>
+                      <p className='m-0'>{skill}</p>
+                      <ProgressBar now={percentage} />
                     </div>  
                   ))}
                 </div>
@@ -67,6 +65,17 @@ export default function Home() {
             <Card className='bg-secondary'>
               <Card.Body>
                 <h1>Experience</h1>
+                <div>
+                  <ul>
+                    {experience.map(({ title, date, desc }) => (
+                      <li key={title}>
+                        <h3>{title}</h3>
+                        <h5>{date}</h5>
+                        <p>{desc}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </Card.Body>
             </Card>
           </Col>
