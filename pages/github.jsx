@@ -1,19 +1,19 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Layout from '../components/Layout'
+import React from 'react'
 
-export default function Home() {
+function Github() {
   return (
     <div>
       <Head>
-        <title>Alberto's Portfolio</title>
+        <title>Alberto's Portfolio - Blog</title>
         <meta name="description" content="Alberto's Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Layout>
-        <h1>Home</h1>
+        <h1>Github</h1>
       </Layout>
     </div>
   )
 }
+
+export default Github
