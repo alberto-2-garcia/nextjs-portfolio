@@ -16,48 +16,33 @@ export default function Home() {
         <h1>Home</h1>
         <Row>
           <Col md='12'>
-            {/* <Card>
-              <Col md={4}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-              </Col>
-              <Col md={8}>
-                <Card.Body className='bg-primary text-light'>
-                  <Card.Title>Alberto García</Card.Title>
-                  <Card.Subtitle style={{color: '#dddddd'}}>Alberto García</Card.Subtitle>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                  </Card.Text>
-                  <Link href='/hireme' passHref>
-                    <Card.Link style={{color: 'white'}}>
-                      Hire me!    
-                    </Card.Link>
-                  </Link>
-                </Card.Body>
-                
-              </Col>
-            </Card> */}
-            <div className="card card-body bg-primary text-light animate__animated animate__fadeIn">
-              <div className="row">
-                <div className="col-md-4">
-                  <Image src="/foto pp.jpg" alt="" className="img-fluid" width={ppSize} height={ppSize} />
-                </div>
-                <div className="col-md-8">
-                  <h1 className='card-title'>Alberto García</h1>
-                  <h3 className='card-subtitle text-muted'>Full Stack Developer</h3>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestiae atque ullam perferendis harum, nisi porro voluptate,
-                    iste consequuntur enim reprehenderit architecto consectetur cum?
-                    Totam ad molestias natus illum illo officia.
-                  </p>
-                  <Link href="/hireme" passHref>
-                    <a className="btn btn-outline-light">Hire Me</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
+            <Card>
+              <Card.Body className='bg-primary text-light'>
+                <Row>
+                  <Col md={4}>
+                    <Image src="/foto pp.jpg" alt="" className="img-fluid" width={ppSize} height={ppSize} />
+                  </Col>
+                  <Col md={8}>
+                    <Card.Title style={{fontSize: '2rem'}}>Alberto García</Card.Title>
+                    <Card.Subtitle className='text-muted mb-2' style={{color: '#dddddd', fontSize: '1.2rem'}}>FULL STACK DEVELOPER</Card.Subtitle>
+                    <Card.Text>
+                      Some quick example text to build on the card title and make up the bulk of
+                      the card's content.
+                    </Card.Text>
+                    <Link href="/hireme" passHref>
+                      <Card.Link className="btn btn-outline-light">
+                        Hire me!
+                      </Card.Link>
+                    </Link>
+                  </Col>
+                </Row>
+              </Card.Body>
+            </Card>
           </Col>
+        </Row>
+
+        <Row>
+
         </Row>
       </Layout>
     </div>
