@@ -8,8 +8,6 @@ function Blog() {
     <div>
       <Head>
         <title>Alberto's Portfolio - Blog</title>
-        <meta name="description" content="Alberto's Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Layout>

@@ -6,9 +6,7 @@ function Github() {
   return (
     <div>
       <Head>
-        <title>Alberto's Portfolio - Blog</title>
-        <meta name="description" content="Alberto's Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Alberto's Portfolio - Github</title>
       </Head>
 
       <Layout>
