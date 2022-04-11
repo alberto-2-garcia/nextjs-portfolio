@@ -1,11 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Col, Row, Card, Button } from 'react-bootstrap'
+import { Col, Row, Card, Button, ProgressBar } from 'react-bootstrap'
 import Layout from '../components/Layout'
 
+const ppSize = 350;
+import { skills } from './../profile';
+
 export default function Home() {
-  const ppSize = 350;
+  
+  
   return (
     <div>
       <Head>
@@ -40,9 +44,32 @@ export default function Home() {
             </Card>
           </Col>
         </Row>
+        <Row className='py-2 my-2'>
+          <Col md={4}>
+            <Card className='bg-secondary'>
+              <Card.Body>
+                <h1>Skills</h1>
+                <div>
+                  {skills.map(({ skill, percentage }) => (
+                    <div key={skill}>
+                      <p>{skill}</p>
+                      <p>
+                        <ProgressBar now={percentage} />
+                      </p>
+                    </div>  
+                  ))}
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
 
-        <Row>
-
+          <Col md={8}>
+            <Card className='bg-secondary'>
+              <Card.Body>
+                <h1>Experience</h1>
+              </Card.Body>
+            </Card>
+          </Col>
         </Row>
       </Layout>
     </div>
