@@ -5,6 +5,7 @@ import { Col, Row, Card, Button } from 'react-bootstrap'
 import Layout from '../components/Layout'
 
 export default function Home() {
+  const ppSize = 350;
   return (
     <div>
       <Head>
@@ -41,7 +42,7 @@ export default function Home() {
             <div className="card card-body bg-primary text-light animate__animated animate__fadeIn">
               <div className="row">
                 <div className="col-md-4">
-                  <img src="/foto pp.jpg" alt="" className="img-fluid" />
+                  <Image src="/foto pp.jpg" alt="" className="img-fluid" width={ppSize} height={ppSize} />
                 </div>
                 <div className="col-md-8">
                   <h1 className='card-title'>Alberto García</h1>
