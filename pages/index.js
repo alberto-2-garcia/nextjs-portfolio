@@ -1,15 +1,27 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import NextImage from 'next/image'
 import Link from 'next/link'
 import { Col, Row, Card, Button, ProgressBar } from 'react-bootstrap'
 import Layout from '../components/Layout'
+
+// opt-out of image optimization, no-op
+const customLoader = ({ src }) => {
+  return src
+}
+
+function Image(props) {
+  return (
+    <NextImage
+      {...props}
+      loader={customLoader}
+    />
+  );
+}
 
 const ppSize = 350;
 import { skills, experience } from './../profile';
 
 export default function Home() {
-  
-  
   return (
     <div>
       <Head>
