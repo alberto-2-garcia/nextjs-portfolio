@@ -36,7 +36,7 @@ export default function Home() {
               <Card.Body className='bg-primary text-light'>
                 <Row>
                   <Col md={4}>
-                    <Image src="/foto pp.jpg" alt="" className="img-fluid" width={ppSize} height={ppSize} />
+                    <Image src={process.env.BACKEND_URL + "/foto pp.jpg"} alt="" className="img-fluid" width={ppSize} height={ppSize} />
                   </Col>
                   <Col md={8}>
                     <Card.Title style={{fontSize: '2rem'}}>Alberto García</Card.Title>
@@ -45,7 +45,7 @@ export default function Home() {
                       Some quick example text to build on the card title and make up the bulk of
                       the card's content.
                     </Card.Text>
-                    <Link href="/hireme" passHref>
+                    <Link href="/hireme" as={process.env.BACKEND_URL + '/hireme'} passHref>
                       <Card.Link className="btn btn-outline-light">
                         Hire me!
                       </Card.Link>

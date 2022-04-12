@@ -5,7 +5,7 @@ export default function Document() {
     <Html>
       <Head>
         <meta name="description" content="Alberto's Portfolio Web Site" />
-        <link rel="icon" href="/foto pp.jpg" />
+        <link rel="icon" href={process.env.BACKEND_URL + "/foto pp.jpg"} />
       </Head>
       <body>
         <Main />
